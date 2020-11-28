@@ -13,6 +13,11 @@ const Name = styled.h1`
   font-family: 'Roboto';
 `;
 
+const Poste = styled.h2`
+  color: #FFF;
+  font-family: 'Roboto';
+`;
+
 const Global = styled.div`
   display: flex;
   background-color: #222A35;
@@ -29,7 +34,7 @@ function Presentation() {
       <Portrait src={mainPortrait} alt="main portrait" />
       <div>
         <Name>NICOLAS BONAMY</Name>
-        <h2>Développeur web et web mobile junior</h2>
+        <Poste>Développeur web et web mobile junior</Poste>
         <a href="https://github.com/NicolasBonamy">
           <GitHubImg src={github} alt="gitHub" />
         </a>

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Experience from './components/Experience';
+import ExperienceList from './components/ExperienceList';
 import Presentation from './components/Presentation';
 
 const Main = styled.div`
@@ -47,9 +48,7 @@ function App() {
   return (
     <Main className="App">
       <Presentation />
-      {experiences.map((experience) => {
-        return (<Experience {...experiences} />)
-      })}
+      <ExperienceList />
     </Main>
   );
 }

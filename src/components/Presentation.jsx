@@ -10,12 +10,10 @@ const Portrait = styled.img`
 
 const Name = styled.h1`
   color: #FFF;
-  font-family: 'Roboto';
 `;
 
 const Poste = styled.h2`
   color: #FFF;
-  font-family: 'Roboto';
 `;
 
 const Global = styled.div`

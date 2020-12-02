@@ -10,7 +10,10 @@ const Portrait = styled.img`
 
 const Name = styled.h1`
   color: #FFF;
-  font-family: 'Roboto';
+`;
+
+const Poste = styled.h2`
+  color: #FFF;
 `;
 
 const Global = styled.div`
@@ -29,7 +32,7 @@ function Presentation() {
       <Portrait src={mainPortrait} alt="main portrait" />
       <div>
         <Name>NICOLAS BONAMY</Name>
-        <h2>Développeur web et web mobile junior</h2>
+        <Poste>Développeur web et web mobile junior</Poste>
         <a href="https://github.com/NicolasBonamy">
           <GitHubImg src={github} alt="gitHub" />
         </a>

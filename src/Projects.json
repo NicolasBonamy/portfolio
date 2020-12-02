@@ -1,0 +1,29 @@
+[
+  {
+    "date": "Octobre 2020",
+    "titre": "Player Wild",
+    "cadre": "Projet 1 - WCS",
+    "source": "https://maxime-monjal.github.io/Player-wild/",
+    "illustration": "",
+    "description": "Il s'agit d'un site web responsive sous forme d'articles de blog développé principalement en HTML et CSS. Seul le menu burger fait appel à du Javascript. Le thème choisi par l'équipe se porte sur les jeux de société.",
+    "skills": "HTML, CSS, JavaScript"
+  },
+  {
+    "date": "Novembre 2020",
+    "titre": "Middle Trade",
+    "cadre": "Hackaton 1 - WCS",
+    "source": "https://middle-trade.netlify.app/",
+    "illustration": "",
+    "description": "Le site uniquement développé pour mobile en 24h a pour thème le troc au Moyen-Age. Le sujet était de proposer à une population d'une certaine période de l'histoire une application web permettant à celle-ci d'améliorer son quotidien à l'aide des technologies actuelles",
+    "skills": "React, CSS"
+  },
+  {
+    "date": "Novembre 2020",
+    "titre": "VegeNantes Go",
+    "cadre": "Projet 2 - WCS",
+    "source": "https://vegenantesgo.netlify.app/",
+    "illustration": "",
+    "description": "",
+    "skills": ""
+  }
+]

@@ -1,37 +1,42 @@
 [
   {
     "date": "2010-2020",
+    "lieu": "Nantes",
     "entreprise": "Leroux & Lotz",
     "poste": "Technicien préparateur",
-    "description": "Analyse des plans BE, Lancement d’approvisionnements anticipés, Etablissement des suggestions d’achat et sous-traitance, Validation technique des offres fournisseurs, Lancement de demandes de fabrication atelier, Etablissement des listes de colisage, Suivi des appros atelier et chantier",
+    "description": "Evoluant au sein d'une petite équipe interagissant avec de nombreux services, j'ai pu mettre en avant mon sens de l'organisation, mon autonomie ainsi que ma faculté à communiquer avec les sous-traitants pour des questions techniques. Le secteur d'activité ayant un marché cyclique, j'ai développé ma gestion du stress lors des pics de charge.",
     "type": "emploi"
   },
   {
     "date": "2006-2009",
     "entreprise": "GEA Btt",
+    "lieu": "Nantes",
     "poste": "Technicien préparateur",
-    "description": "Analyse des spécifications clients (EN/FR), Connaissance des codes de construction matière, Rédaction des réquisitions matière, Validation des offres techniques des fournisseurs/sous-traitants, Mise à jour de spécifications",
+    "description": "Travaillant en amont du service achats, j'avais pour mission de parcourir les spécifications techniques du client principalement en anglais afin d'y détecter des exigences particulières requises.",
     "type": "emploi"
   },
   {
     "date": "2005-2006",
+    "lieu": "Nantes",
     "entreprise": "Saunier Duval ECC",
     "poste": "Rédacteur technique",
-    "description": "Rédaction de notices de kits de changement de gaz, Prise en charge des projets de sous-traitance (impression des notices)",
+    "description": "En contact avec les filiales pour les traductions, j'ai travaillé en équipe pour mettre en forme des notices.",
     "type": "emploi"
   },
   {
     "date": "2002-2004",
+    "lieu": "Saint-Nazaire",
     "entreprise": "S.A. S.E.M.T. Pielstick",
     "poste": "Rédacteur technique",
-    "description": "Rédaction de documentation technique de moteurs diesel ",
+    "description": "Rédacteur de documentation technique de moteurs diesel, j'ai découvert la mise en page sous PAO.",
     "type": "emploi"
   },
   {
     "date": "2000-2001",
+    "lieu": "Saint-Nazaire",
     "entreprise": "S.A. A&G Jallais",
     "poste": "Préparateur",
-    "description": "Suivi chantier, avancements, approvisionnement matière",
+    "description": "J'ai travaillé en totale autonomie pour m'assurer que les équipes à bord avaient à disposition l'ensemble des équipements selon le planning établi.",
     "type": "emploi"
   }
 ]

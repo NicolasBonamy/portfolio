@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import mainPortrait from '../pictures/main_portrait.jpg';
+import mainPortrait from '../pictures/main_portrait.png';
 import github from '../pictures/github.png';
+import linkedin from '../logos/linkedin.png';
 
 const Portrait = styled.img`
   max-height: 300px;
+  padding: 0 20px 0 20px;
   width: auto;
   `;
 
@@ -19,11 +21,10 @@ const Poste = styled.h2`
 const Global = styled.div`
   display: flex;
   background-color: #222A35;
-  height: 10%;
 `;
 
-const GitHubImg = styled.img`
-  height: 10%;
+const NetworkImg = styled.img`
+  height: 30px;
 `;
 
 function Presentation() {
@@ -34,7 +35,10 @@ function Presentation() {
         <Name>NICOLAS BONAMY</Name>
         <Poste>Développeur web et web mobile junior</Poste>
         <a href="https://github.com/NicolasBonamy">
-          <GitHubImg src={github} alt="gitHub" />
+          <NetworkImg src={github} alt="gitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/nicolas-bonamy/">
+          <NetworkImg src={linkedin} alt="linkedin" />
         </a>
       </div>
     </Global>

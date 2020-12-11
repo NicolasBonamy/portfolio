@@ -5,6 +5,7 @@ import css3 from '../logos/css-3.svg';
 import react from '../logos/react.svg';
 import npm from '../logos/npm.svg';
 import nodejs from '../logos/nodejs.png';
+import javascript from '../logos/javascript.svg';
 
 const Logos = styled.img`
 width: 4rem;;
@@ -20,6 +21,7 @@ function HardSkills() {
     return <div>
         <Logos src={html5} alt="logo html5" />
         <Logos src={css3} alt="logo css3" />
+        <Logos src={javascript} alt="logo javascript" />
         <Logos src={react} alt="logo react" />
         <Logos src={npm} alt="logo npm" />
         <Logos src={nodejs} alt="logo nodejs" />

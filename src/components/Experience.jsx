@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
+
+const ExperienceCard = styled.div`
+  border: 1px solid;
+`;
 
 class Experience extends Component {
   render() {
-    const { date, entreprise, poste, description } = this.props;
+    const { date, lieu, entreprise, poste, description } = this.props;
     return (
-      <div className="Experience">
-        <div>date : {date}</div>
-        <div>entreprise : {entreprise}</div>
-        <div>poste : {poste}</div>
-        <div>description : {description}</div>
-      </div>
+      <ExperienceCard className="Experience">
+        <h3>{entreprise} | {poste}</h3>
+        <h4>{lieu} / {date}</h4>
+        <p>{description}</p>
+      </ExperienceCard>
     );
   }
 }

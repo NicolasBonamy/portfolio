@@ -4,8 +4,8 @@
     "titre": "Player Wild",
     "cadre": "Projet 1 - WCS",
     "source": "https://maxime-monjal.github.io/Player-wild/",
-    "illustration": "",
-    "description": "Il s'agit d'un site web responsive sous forme d'articles de blog développé principalement en HTML et CSS. Seul le menu burger fait appel à du Javascript. Le thème choisi par l'équipe se porte sur les jeux de société.",
+    "illustration": "./pictures/player-wild.png",
+    "description": "Il s'agit d'un site web responsive sous forme d'articles de blog développé principalement en HTML et CSS. Seul le menu burger fait appel à du Javascript. Le thème choisi par l'équipe porte sur les jeux de société.",
     "skills": "HTML, CSS, JavaScript"
   },
   {
@@ -13,17 +13,26 @@
     "titre": "Middle Trade",
     "cadre": "Hackaton 1 - WCS",
     "source": "https://middle-trade.netlify.app/",
-    "illustration": "",
-    "description": "Le site uniquement développé pour mobile en 24h a pour thème le troc au Moyen-Age. Le sujet était de proposer à une population d'une certaine période de l'histoire une application web permettant à celle-ci d'améliorer son quotidien à l'aide des technologies actuelles",
-    "skills": "React, CSS"
+    "illustration": "./pictures/middle-trade.png",
+    "description": "Le site développé uniquement pour mobile en 24h a pour thème le troc au Moyen-Age. Le sujet était de proposer à une population d'une certaine période de l'histoire une application web permettant à celle-ci d'améliorer son quotidien à l'aide des technologies actuelles",
+    "skills": "React, styled-components"
   },
   {
     "date": "Novembre 2020",
     "titre": "VegeNantes Go",
     "cadre": "Projet 2 - WCS",
     "source": "https://vegenantesgo.netlify.app/",
+    "illustration": "./pictures/vegenantes-go.png",
+    "description": "Site responsive qui invite aux balades dans les jardins nantais en permettant de collecter virtuellement les espèces végétales afin de compléter son herbier numérique et de passer des niveaux. L'ajout de plantes s'effectue par scan d'un QR code.",
+    "skills": "React, styled-components, leaflet"
+  },
+  {
+    "date": "En cours de développement...",
+    "titre": "Meet Halfway",
+    "cadre": "Projet 3 - WCS",
+    "source": "",
     "illustration": "",
     "description": "",
-    "skills": ""
+    "skills": "React, Node.js, Express"
   }
 ]

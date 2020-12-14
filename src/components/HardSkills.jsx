@@ -19,6 +19,7 @@ transition: transform 0.2s;
 
 function HardSkills() {
     return <div>
+        <h2>HARD SKILLS</h2>
         <Logos src={html5} alt="logo html5" />
         <Logos src={css3} alt="logo css3" />
         <Logos src={javascript} alt="logo javascript" />

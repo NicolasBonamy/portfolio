@@ -40,6 +40,7 @@ class Portfolio extends Component {
     const { projects } = this.state;
     return (
       <ListOfProj>
+        <h2>PROJETS</h2>
         <ul>
           {projects.map((project) => {
             return (

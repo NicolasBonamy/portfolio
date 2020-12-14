@@ -40,6 +40,7 @@ class ExperienceList extends Component {
       const { experiences } = this.state;
     return (
       <ListOfExp>
+        <h2>EXPERIENCES PROFESSIONNELLES</h2>
         <ul>
           {experiences.map((experience) => {
             return (

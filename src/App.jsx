@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Experience from './components/Experience';
 import ExperienceList from './components/ExperienceList';
 import HardSkills from './components/HardSkills';
+import Portfolio from './components/Portfolio';
 import Presentation from './components/Presentation';
 
 const Main = styled.div`
@@ -17,6 +18,7 @@ function App() {
       <Presentation />
       <ExperienceList />
       <HardSkills />
+      <Portfolio />
     </Main>
   );
 }

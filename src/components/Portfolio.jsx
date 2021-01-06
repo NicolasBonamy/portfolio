@@ -4,7 +4,14 @@ import Project from "./Project";
 import styled from "styled-components";
 
 const ListOfProj = styled.div`
-  ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  ul {
     padding: 0;
   }
   li {
@@ -39,7 +46,7 @@ class Portfolio extends Component {
   render() {
     const { projects } = this.state;
     return (
-      <ListOfProj>
+      <ListOfProj id="projets">
         <h2>PROJETS</h2>
         <ul>
           {projects.map((project) => {

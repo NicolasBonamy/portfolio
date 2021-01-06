@@ -1,10 +1,17 @@
 import { Component } from "react";
 import axios from "axios";
 import Experience from "./Experience";
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const ListOfExp = styled.div`
-  ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  ul {
     padding: 0;
   }
   li {
@@ -37,9 +44,9 @@ class ExperienceList extends Component {
   }
 
   render() {
-      const { experiences } = this.state;
+    const { experiences } = this.state;
     return (
-      <ListOfExp>
+      <ListOfExp id="experiences">
         <h2>EXPERIENCES PROFESSIONNELLES</h2>
         <ul>
           {experiences.map((experience) => {

@@ -4,12 +4,33 @@ import middleTrade from "../pictures/middle-trade.png";
 import vegenantesGo from "../pictures/vegenantes-go.png";
 import styled from "styled-components";
 
+const media = {
+  desktop: '@media(min-width:768px)',
+};
+
 const Card = styled.div`
+${media.desktop} {
   display: flex;
   flex-direction: row;
-  border: 1px solid;
+}
+max-width: 600px;
+padding: 20px;
+margin: 20px;
+background: #fff;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 10px;
+  :hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   img {
-    width: 50%;
+    width: 150px;
+  }
+  .ProjectDescription {
+    padding: 0 0 0 20px;
   }
 `;
 
@@ -38,16 +59,16 @@ class Project extends Component {
           )}
         </div>
         <div className="ProjectDescription">
+          <h3>{titre} | {cadre}</h3>
+          
+          <div>{description}</div>
+          <div>{skills}</div>
           <div>{date}</div>
-          <div>{titre}</div>
-          <div>{cadre}</div>
           {source ? (
             <a href={source}>Allons voir le site...</a>
           ) : (
             <p>En cours de développement.</p>
           )}
-          <div>{description}</div>
-          <div>{skills}</div>
         </div>
       </Card>
     );

@@ -24,15 +24,24 @@
     "source": "https://vegenantesgo.netlify.app/",
     "illustration": "../pictures/vegenantes-go.png",
     "description": "Site responsive qui invite aux balades dans les jardins nantais en permettant de collecter virtuellement les espèces végétales afin de compléter son herbier numérique et de passer des niveaux. L'ajout de plantes s'effectue par scan d'un QR code.",
-    "skills": "React, styled-components, leaflet"
+    "skills": "React, axios, styled-components, leaflet"
   },
   {
-    "date": "En cours de développement...",
+    "date": "Janvier 2021",
+    "titre": "Magic Pills",
+    "cadre": "Hackaton 2 - WCS",
+    "source": "https://60030817e6f31a4225286870--magicpills.netlify.app/",
+    "illustration": "../pictures/magic-pills.png",
+    "description": "Site développé en un peu plus de 48h. Le sujet : une web app d'e-commerce pour laquelle l'accent a été mis sur le référencement.",
+    "skills": "React, axios, modules CSS, react-snap, Helmet"
+  },
+  {
+    "date": "Février 2021",
     "titre": "Meet Halfway",
     "cadre": "Projet 3 - WCS",
     "source": "",
     "illustration": "",
-    "description": "",
-    "skills": "React, Node.js, Express"
+    "description": "[en cours de développement] L'application web permet de faciliter les voyages en bus d'un groupe de personnes souhaitant se retrouver. ",
+    "skills": "React, axios, modules CSS, Node.js, Express, mySQL"
   }
 ]

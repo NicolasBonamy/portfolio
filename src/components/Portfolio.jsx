@@ -49,9 +49,9 @@ class Portfolio extends Component {
       <ListOfProj id="projets">
         <h2>PROJETS</h2>
         <ul>
-          {projects.map((project) => {
+          {projects.map((project, index) => {
             return (
-              <li>
+              <li key={index}>
                 <Project {...project} />
               </li>
             );

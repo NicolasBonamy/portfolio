@@ -17,6 +17,8 @@ z-index: 1;
   li {
     color: #ffffff;
     padding: 0 1rem 0 1rem;
+    text-align: center;
+    text-decoration: none;
   }
 `;
 

@@ -49,9 +49,9 @@ class ExperienceList extends Component {
       <ListOfExp id="experiences">
         <h2>EXPERIENCES PROFESSIONNELLES</h2>
         <ul>
-          {experiences.map((experience) => {
+          {experiences.map((experience, index) => {
             return (
-              <li>
+              <li key={index}>
                 <Experience {...experience} />
               </li>
             );

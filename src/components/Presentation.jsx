@@ -10,7 +10,7 @@ const media = {
 
 const Portrait = styled.img`
   max-height: 30vh;
-  padding: 0 20px 0 20px;
+  padding: 70px 20px 0 20px;
   width: auto;
 `;
 

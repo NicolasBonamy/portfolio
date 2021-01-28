@@ -16,7 +16,7 @@ const ExperienceCard = styled.div`
 
 class Experience extends Component {
   render() {
-    const { date, lieu, entreprise, poste, description } = this.props;
+    const { date, lieu, entreprise, poste, description, id } = this.props;
     return (
       <ExperienceCard className="Experience">
         <h3>{entreprise} | {poste}</h3>

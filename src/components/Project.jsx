@@ -2,26 +2,28 @@ import { Component } from "react";
 import playerWild from "../pictures/player-wild.png";
 import middleTrade from "../pictures/middle-trade.png";
 import vegenantesGo from "../pictures/vegenantes-go.png";
+import magicPills from "../pictures/magic-pills.png";
+import meetHalfWay from "../pictures/meet-halfway.png";
 import styled from "styled-components";
 
 const media = {
-  desktop: '@media(min-width:768px)',
+  desktop: "@media(min-width:768px)",
 };
 
 const Card = styled.div`
-${media.desktop} {
-  display: flex;
-  flex-direction: row;
-}
-max-width: 600px;
-padding: 20px;
-margin: 20px;
-background: #fff;
-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  ${media.desktop} {
+    display: flex;
+    flex-direction: row;
+  }
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 10px;
   :hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
   display: flex;
   flex-direction: column;
@@ -41,7 +43,6 @@ class Project extends Component {
       titre,
       cadre,
       source,
-      illustration,
       description,
       skills,
     } = this.props;
@@ -54,13 +55,19 @@ class Project extends Component {
             <img src={middleTrade} />
           ) : titre === "VegeNantes Go" ? (
             <img src={vegenantesGo} />
+          ) : titre === "Magic Pills" ? (
+            <img src={magicPills} />
+          ) : titre === "Meet Halfway" ? (
+            <img src={meetHalfWay} />
           ) : (
             ""
           )}
         </div>
         <div className="ProjectDescription">
-          <h3>{titre} | {cadre}</h3>
-          
+          <h3>
+            {titre} | {cadre}
+          </h3>
+
           <div>{description}</div>
           <div>{skills}</div>
           <div>{date}</div>

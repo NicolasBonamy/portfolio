@@ -1,52 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-/* const Nav = styled.div`
-background-color: #222a35;
-position: sticky;
-top: 0px;
-z-index: 1;
-  ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    color: #ffffff;
-    margin: 0;
-    padding: 1rem;
-  }
-  li {
-    color: #ffffff;
-    padding: 0 1rem 0 1rem;
-    text-align: center;
-    text-decoration: none;
-  }
-`;
-
-function Header() {
-  return (
-    <Nav className="Header" id="header">
-      <nav>
-        <ul>
-          <a href="#presentation">
-            <li>Accueil</li>
-          </a>
-          <a href="#experiences">
-            <li>Expériences professionnelles</li>
-          </a>
-          <a href="#hardSkills">
-            <li>Hard skills</li>
-          </a>
-          <a href="#projets">
-            <li>Projets</li>
-          </a>
-        </ul>
-      </nav>
-    </Nav>
-  );
-}
-
-export default Header; */
-
 const MenuIcon = styled.button`
   position: fixed;
   top: 0.5rem;
@@ -102,7 +56,7 @@ const MenuLinks = styled.nav`
   height: fit-content;
   width: fit-content;
   top: 3rem;
-  background: rgba(34, 42, 53, 0.7);
+  background: rgba(34, 42, 53, 0.8);
   position: absolute;
   border-radius: 5px;
   transition: transform 200ms;
@@ -111,6 +65,7 @@ const MenuLinks = styled.nav`
     transform: ${({ nav }) => (nav ? "translateX(0)" : "translateX(0)")};
     display: flex;
     flex-direction: row;
+    background: #222a35;
     top: 0;
     width: 100%;
     border-radius: 0;
@@ -163,7 +118,7 @@ const Header = () => {
   const [nav, showNav] = useState(false);
 
   return (
-    <Wrapper>
+    <Wrapper className="Header" id="header"> 
       <MenuIcon nav={nav} onClick={() => showNav(!nav)}>
         <div />
         <div />

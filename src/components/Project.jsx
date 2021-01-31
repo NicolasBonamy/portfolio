@@ -33,19 +33,42 @@ const Card = styled.div`
   }
   .ProjectDescription {
     padding: 0 0 0 20px;
+    h3 {
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      background: linear-gradient(to right, rgba(34, 42, 53, 0.7), #fff 70%);
+      border-radius: 0.5rem;
+    }
+    h3 .ProjectTitle {
+      color: #fff;
+    }
+    div {
+      margin: 1rem 0 1rem 0;
+    }
+    div:nth-child(2) {
+      text-align: justify;
+    }
+    div:nth-child(3) {
+      font-weight: bold;
+    }
+    div:nth-child(4) {
+      font-style: italic;
+    }
+    a {
+      color: #000;
+      &:focus,
+      &:hover,
+      &:visited,
+      &:link,
+      &:active {
+        text-decoration: none;
+      }
+    }
   }
 `;
 
 class Project extends Component {
   render() {
-    const {
-      date,
-      titre,
-      cadre,
-      source,
-      description,
-      skills,
-    } = this.props;
+    const { date, titre, cadre, source, description, skills } = this.props;
     return (
       <Card className="Project">
         <div className="ProjectView">
@@ -65,14 +88,15 @@ class Project extends Component {
         </div>
         <div className="ProjectDescription">
           <h3>
-            {titre} | {cadre}
+            <span className="ProjectTitle">{titre} | </span>
+            <span className="ProjectCadre">{cadre}</span>
           </h3>
 
           <div>{description}</div>
           <div>{skills}</div>
           <div>{date}</div>
           {source ? (
-            <a href={source}>Allons voir le site...</a>
+            <a href={source}>&gt;&gt;&gt; Allons voir le site &gt;&gt;&gt;</a>
           ) : (
             <p>En cours de développement.</p>
           )}

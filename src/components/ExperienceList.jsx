@@ -9,10 +9,11 @@ const ListOfExp = styled.div`
   align-items: center;
   h2 {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
   ul {
     padding: 0;
+    margin-bottom: 0;
   }
   li {
     list-style: none;

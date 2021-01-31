@@ -9,7 +9,7 @@ const ListOfProj = styled.div`
   align-items: center;
   h2 {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
   ul {
     padding: 0;

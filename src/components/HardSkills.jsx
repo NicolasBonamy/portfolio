@@ -18,6 +18,8 @@ const Skills = styled.div`
   h2 {
     text-align: center;
     margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 `;
 

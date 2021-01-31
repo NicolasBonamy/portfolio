@@ -3,9 +3,10 @@ import styled from "styled-components";
 import mainPortrait from "../pictures/main_portrait.png";
 import github from "../pictures/github.png";
 import linkedin from "../logos/linkedin.png";
+import cv from "../logos/cv.png";
 
 const media = {
-  desktop: '@media(min-width:768px)',
+  desktop: "@media(min-width:768px)",
 };
 
 const Portrait = styled.img`
@@ -18,6 +19,9 @@ const Prez = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  div {
+    margin: 1rem 0;
+  }
 `;
 
 const Name = styled.h1`
@@ -28,13 +32,14 @@ const Name = styled.h1`
 const Poste = styled.h2`
   color: #fff;
   text-align: center;
+  margin: 1.2rem;
 `;
 
 const Global = styled.div`
-${media.desktop} {
-  flex-direction: row;
-  justify-content: center;
-}
+  ${media.desktop} {
+    flex-direction: row;
+    justify-content: center;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,6 +65,9 @@ function Presentation() {
           </a>
           <a href="https://www.linkedin.com/in/nicolas-bonamy/">
             <NetworkImg src={linkedin} alt="linkedin" />
+          </a>
+          <a href="./CV Nicolas Bonamy.pdf">
+            <NetworkImg src={cv} alt="linkedin" />
           </a>
         </div>
       </Prez>

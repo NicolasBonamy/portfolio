@@ -5,6 +5,7 @@ import ExperienceList from "./components/ExperienceList";
 import HardSkills from "./components/HardSkills";
 import Portfolio from "./components/Portfolio";
 import Presentation from "./components/Presentation";
+import Footer from "./components/Footer";
 
 const Main = styled.div`
   margin: 0;
@@ -21,6 +22,7 @@ function App() {
       <ExperienceList />
       <HardSkills />
       <Portfolio />
+      <Footer />
     </Main>
   );
 }

@@ -10,9 +10,17 @@ const ListOfProj = styled.div`
   h2 {
     text-align: center;
     margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   ul {
     padding: 0;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
   }
   li {
     list-style: none;

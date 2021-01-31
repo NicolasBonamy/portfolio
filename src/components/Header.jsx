@@ -88,8 +88,8 @@ const MenuLinks = styled.nav`
   }
 
   li {
-    margin-bottom: 1rem;
-    margin-right: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.2rem;
     @media (min-width: 768px) {
       padding: 0 1rem 0 1rem;
       text-align: center;

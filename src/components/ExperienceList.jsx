@@ -10,13 +10,29 @@ const ListOfExp = styled.div`
   h2 {
     text-align: center;
     margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   ul {
     padding: 0;
     margin-bottom: 0;
+    @media (min-width: 768px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   li {
     list-style: none;
+  }
+  @media (min-width: 768px) {
+    li:nth-child(odd) {
+      transform: translateX(6vw);
+    }
+    li:nth-child(even) {
+      transform: translateX(-6vw);
+    }
   }
 `;
 

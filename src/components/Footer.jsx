@@ -9,6 +9,7 @@ const Foot = styled.div`
     padding: 1rem;
     margin-bottom: 0;
     text-align: end;
+    font-size: 1rem;
   }
 `;
 

@@ -26,14 +26,6 @@ const ListOfTrain = styled.div`
   li {
     list-style: none;
   }
-  @media (min-width: 768px) {
-    li:nth-child(odd) {
-      transform: translateX(6vw);
-    }
-    li:nth-child(even) {
-      transform: translateX(-6vw);
-    }
-  }
 `;
 
 class TrainingList extends Component {
@@ -63,7 +55,7 @@ class TrainingList extends Component {
   render() {
     const { trainingCourses } = this.state;
     return (
-      <ListOfTrain id="trainingCourses">
+      <ListOfTrain id="formation">
         <h2>FORMATION</h2>
         <ul>
           {trainingCourses.map((trainingCourse, index) => {

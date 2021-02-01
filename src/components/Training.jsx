@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import WCS from "../logos/WCS.png"
 
 const TrainingCard = styled.div`
   max-width: 600px;
@@ -20,11 +21,16 @@ const TrainingCard = styled.div`
   }
 `;
 
+const LogoWCS = styled.img`
+width: 6rem;
+`;
+
 class Training extends Component {
   render() {
     const { date, lieu, école, formation, description, id } = this.props;
     return (
       <TrainingCard className="Training">
+        <LogoWCS src={WCS} alt="logo WCS" />
         <h3>
           {école} | {formation}
         </h3>

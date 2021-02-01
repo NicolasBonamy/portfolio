@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import styled from "styled-components";
 
 const MenuIcon = styled.button`
@@ -85,6 +86,20 @@ const MenuLinks = styled.nav`
       margin: 0;
       padding: 1rem;
     }
+    a {
+      text-decoration: none;
+      color: white;
+      margin-left: 1rem;
+      display: flex;
+      align-items: center;
+      &:focus,
+      &:hover,
+      &:visited,
+      &:link,
+      &:active {
+        text-decoration: none;
+      }
+    }
   }
 
   li {
@@ -99,7 +114,7 @@ const MenuLinks = styled.nav`
   }
 `;
 
-const StyledLink = styled.a`
+/* const StyledLink = styled.a`
   text-decoration: none;
   color: white;
   margin-left: 1rem;
@@ -112,13 +127,13 @@ const StyledLink = styled.a`
   &:active {
     text-decoration: none;
   }
-`;
+`; */
 
 const Header = () => {
   const [nav, showNav] = useState(false);
 
   return (
-    <Wrapper className="Header" id="header"> 
+    <Wrapper className="Header" id="header">
       <MenuIcon nav={nav} onClick={() => showNav(!nav)}>
         <div />
         <div />
@@ -126,30 +141,36 @@ const Header = () => {
       </MenuIcon>
       <MenuLinks nav={nav}>
         <ul>
-          <StyledLink
+          <AnchorLink
             href="#presentation"
             onClick={() => (nav ? showNav(!nav) : true)}
           >
             <li>Accueil</li>
-          </StyledLink>
-          <StyledLink
+          </AnchorLink>
+          <AnchorLink
+            href="#formation"
+            onClick={() => (nav ? showNav(!nav) : true)}
+          >
+            <li>Formation</li>
+          </AnchorLink>
+          <AnchorLink
             href="#experiences"
             onClick={() => (nav ? showNav(!nav) : true)}
           >
             <li>Expériences professionnelles</li>
-          </StyledLink>
-          <StyledLink
+          </AnchorLink>
+          <AnchorLink
             href="#hardSkills"
             onClick={() => (nav ? showNav(!nav) : true)}
           >
             <li>Hard skills</li>
-          </StyledLink>
-          <StyledLink
+          </AnchorLink>
+          <AnchorLink
             href="#projets"
             onClick={() => (nav ? showNav(!nav) : true)}
           >
             <li>Projets</li>
-          </StyledLink>
+          </AnchorLink>
         </ul>
       </MenuLinks>
     </Wrapper>

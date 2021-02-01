@@ -1,4 +1,6 @@
 import { Component } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import playerWild from "../pictures/player-wild.png";
 import middleTrade from "../pictures/middle-trade.png";
 import vegenantesGo from "../pictures/vegenantes-go.png";
@@ -69,8 +71,9 @@ const Card = styled.div`
 class Project extends Component {
   render() {
     const { date, titre, cadre, source, description, skills } = this.props;
+    AOS.init();
     return (
-      <Card className="Project">
+      <Card data-aos="fade-up" className="Project">
         <div className="ProjectView">
           {titre === "Player Wild" ? (
             <img src={playerWild} />

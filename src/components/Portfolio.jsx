@@ -1,5 +1,7 @@
 import { Component } from "react";
 import axios from "axios";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Project from "./Project";
 import styled from "styled-components";
 
@@ -53,6 +55,7 @@ class Portfolio extends Component {
 
   render() {
     const { projects } = this.state;
+    AOS.init();
     return (
       <ListOfProj id="projets">
         <h2>PROJETS</h2>
@@ -60,7 +63,7 @@ class Portfolio extends Component {
           {projects.map((project, index) => {
             return (
               <li key={index}>
-                <Project {...project} />
+                <Project data-aos="fade-right" {...project} />
               </li>
             );
           })}

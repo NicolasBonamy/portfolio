@@ -6,6 +6,7 @@ import HardSkills from "./components/HardSkills";
 import Portfolio from "./components/Portfolio";
 import Presentation from "./components/Presentation";
 import Footer from "./components/Footer";
+import TrainingList from "./components/TrainingList";
 
 const Main = styled.div`
   margin: 0;
@@ -19,6 +20,7 @@ function App() {
     <Main className="App">
       <Header />
       <Presentation />
+      <TrainingList />
       <ExperienceList />
       <HardSkills />
       <Portfolio />

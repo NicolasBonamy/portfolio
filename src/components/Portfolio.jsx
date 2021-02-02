@@ -58,12 +58,12 @@ class Portfolio extends Component {
     AOS.init();
     return (
       <ListOfProj id="projets">
-        <h2>PROJETS</h2>
+        <h2 data-aos="fade-down">PROJETS</h2>
         <ul>
           {projects.map((project, index) => {
             return (
               <li key={index}>
-                <Project data-aos="fade-right" {...project} />
+                <Project {...project} />
               </li>
             );
           })}

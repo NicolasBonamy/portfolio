@@ -69,7 +69,7 @@ class ExperienceList extends Component {
           {experiences.map((experience, index) => {
             return (
               <li key={index}>
-                <Experience {...experience} />
+                <Experience {...experience} id={index}/>
               </li>
             );
           })}

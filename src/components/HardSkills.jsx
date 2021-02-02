@@ -1,4 +1,6 @@
 import React from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import styled from "styled-components";
 import html5 from "../logos/html-5.svg";
 import css3 from "../logos/css-3.svg";
@@ -24,7 +26,7 @@ const Skills = styled.div`
 `;
 
 const SkillsLogos = styled.div`
-  margin: auto;
+  margin: 16px auto 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -41,10 +43,11 @@ const Logos = styled.img`
 `;
 
 function HardSkills() {
+  AOS.init();
   return (
     <Skills className="HardSkills" id="hardSkills">
-      <h2>HARD SKILLS</h2>
-      <SkillsLogos className="SkillsLogos">
+      <h2 data-aos="fade-down">HARD SKILLS</h2>
+      <SkillsLogos data-aos="flip-up" className="SkillsLogos">
         <Logos src={html5} alt="logo html5" />
         <Logos src={css3} alt="logo css3" />
         <Logos src={javascript} alt="logo javascript" />

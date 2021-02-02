@@ -73,7 +73,7 @@ class Project extends Component {
     const { date, titre, cadre, source, description, skills } = this.props;
     AOS.init();
     return (
-      <Card data-aos="fade-up" className="Project">
+      <Card data-aos="fade-up" data-aos-delay="500" className="Project">
         <div className="ProjectView">
           {titre === "Player Wild" ? (
             <img src={playerWild} />

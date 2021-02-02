@@ -46,8 +46,8 @@ function HardSkills() {
   AOS.init();
   return (
     <Skills className="HardSkills" id="hardSkills">
-      <h2 data-aos="fade-down">HARD SKILLS</h2>
-      <SkillsLogos data-aos="flip-up" className="SkillsLogos">
+      <h2 data-aos="fade-right">HARD SKILLS</h2>
+      <SkillsLogos data-aos="fade-right" className="SkillsLogos">
         <Logos src={html5} alt="logo html5" />
         <Logos src={css3} alt="logo css3" />
         <Logos src={javascript} alt="logo javascript" />

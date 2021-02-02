@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const MenuIcon = styled.button`
   position: fixed;
+  z-index:10;
   top: 0.5rem;
   left: 0.5rem;
   display: flex;
@@ -113,21 +114,6 @@ const MenuLinks = styled.nav`
     }
   }
 `;
-
-/* const StyledLink = styled.a`
-  text-decoration: none;
-  color: white;
-  margin-left: 1rem;
-  display: flex;
-  align-items: center;
-  &:focus,
-  &:hover,
-  &:visited,
-  &:link,
-  &:active {
-    text-decoration: none;
-  }
-`; */
 
 const Header = () => {
   const [nav, showNav] = useState(false);

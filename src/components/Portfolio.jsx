@@ -1,11 +1,28 @@
 import { Component } from "react";
 import axios from "axios";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Project from "./Project";
 import styled from "styled-components";
 
 const ListOfProj = styled.div`
-  ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  ul {
     padding: 0;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
   }
   li {
     list-style: none;
@@ -38,12 +55,14 @@ class Portfolio extends Component {
 
   render() {
     const { projects } = this.state;
+    AOS.init();
     return (
-      <ListOfProj>
+      <ListOfProj id="projets">
+        <h2 data-aos="fade-down">PROJETS</h2>
         <ul>
-          {projects.map((project) => {
+          {projects.map((project, index) => {
             return (
-              <li>
+              <li key={index}>
                 <Project {...project} />
               </li>
             );

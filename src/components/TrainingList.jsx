@@ -1,9 +1,9 @@
 import { Component } from "react";
 import axios from "axios";
-import Experience from "./Experience";
+import Training from "./Training";
 import styled from "styled-components";
 
-const ListOfExp = styled.div`
+const ListOfTrain = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,57 +26,49 @@ const ListOfExp = styled.div`
   li {
     list-style: none;
   }
-  @media (min-width: 768px) {
-    li:nth-child(odd) {
-      transform: translateX(6vw);
-    }
-    li:nth-child(even) {
-      transform: translateX(-6vw);
-    }
-  }
 `;
 
-class ExperienceList extends Component {
+class TrainingList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      experiences: [],
+      trainingCourses: [],
     };
-    this.fetchExperiences = this.fetchExperiences.bind(this);
+    this.fetchTrainingCourses = this.fetchTrainingCourses.bind(this);
   }
   componentDidMount() {
-    this.fetchExperiences();
+    this.fetchTrainingCourses();
   }
 
-  fetchExperiences() {
+  fetchTrainingCourses() {
     axios
       .get(
-        "https://raw.githubusercontent.com/NicolasBonamy/portfolio/dev/src/Experiences.json"
+        "https://raw.githubusercontent.com/NicolasBonamy/portfolio/dev/Training_courses.json"
       )
       .then((resp) => {
         this.setState({
-          experiences: resp.data,
+          trainingCourses: resp.data,
         });
       });
   }
 
   render() {
-    const { experiences } = this.state;
+    const { trainingCourses } = this.state;
     return (
-      <ListOfExp id="experiences">
-        <h2>EXPERIENCES PROFESSIONNELLES</h2>
+      <ListOfTrain id="formation">
+        <h2>FORMATION</h2>
         <ul>
-          {experiences.map((experience, index) => {
+          {trainingCourses.map((trainingCourse, index) => {
             return (
               <li key={index}>
-                <Experience {...experience} id={index}/>
+                <Training {...trainingCourse} />
               </li>
             );
           })}
         </ul>
-      </ListOfExp>
+      </ListOfTrain>
     );
   }
 }
 
-export default ExperienceList;
+export default TrainingList;

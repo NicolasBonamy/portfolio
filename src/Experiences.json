@@ -1,5 +1,13 @@
 [
   {
+    "date": "2021",
+    "lieu": "Nantes",
+    "entreprise": "HiPay",
+    "poste": "Software Engineer",
+    "description": "J'ai développé un POC (Proof Of Concept) de collecte de données afin de pouvoir analyser le traitement des fichiers monétiques et bancaires. Depuis l'analyse technique de l'existant sous PHP, l'analyse fonctionnelle, jusqu'à la réalisation d'un backend sous Node.js sur la plateforme GCP (Cloud-Functions, Pub/Sub, BigQuery) et d'un frontend sous React. L'ensemble a été développé sous environnement conteneurisé (Docker).",
+    "type": "stage"
+  },
+  {
     "date": "2010-2020",
     "lieu": "Nantes",
     "entreprise": "Leroux & Lotz",

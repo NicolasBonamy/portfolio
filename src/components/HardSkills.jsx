@@ -12,6 +12,9 @@ import express from "../logos/express.png";
 import mysql from "../logos/mysql.png";
 import git from "../logos/git.png";
 import github from "../logos/github.png";
+import docker from "../logos/docker.png";
+import gcp from "../logos/gcp.png";
+import jest from "../logos/jest.png"
 
 const Skills = styled.div`
   display: flex;
@@ -58,6 +61,9 @@ function HardSkills() {
         <Logos src={mysql} alt="logo mysql" />
         <Logos src={git} alt="logo git" />
         <Logos src={github} alt="logo github" />
+        <Logos src={docker} alt="logo docker" />
+        <Logos src={gcp} alt="logo google cloud platform" />
+        <Logos src={jest} alt="logo jest" />
       </SkillsLogos>
     </Skills>
   );

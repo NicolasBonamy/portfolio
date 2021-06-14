@@ -58,7 +58,7 @@ function Presentation() {
       <Portrait src={mainPortrait} alt="main portrait" />
       <Prez>
         <Name>NICOLAS BONAMY</Name>
-        <Poste>Développeur web et web mobile junior</Poste>
+        <Poste>Développeur web et web mobile</Poste>
         <div>
           <a href="https://github.com/NicolasBonamy">
             <NetworkImg src={github} alt="gitHub" />

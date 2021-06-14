@@ -16,7 +16,7 @@ const Foot = styled.div`
 function Footer() {
   return (
     <Foot>
-      <h3>Nicolas Bonamy | WCS | Février 2021</h3>
+      <h3>Nicolas Bonamy | Juin 2021</h3>
     </Foot>
   );
 }
